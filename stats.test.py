@@ -18,7 +18,7 @@ class StatsTest(unittest.TestCase):
 
   def test_avg_ignore_nan_in_input(self):
     computedStats = statistics.calculateStats([1.5,float('nan'),3.2,4.5])
-  epsilon = 0.001
+    epsilon = 0.001
     self.assertAlmostEqual(computedStats["avg"], 3.067, delta=epsilon)
     self.assertAlmostEqual(computedStats["max"], 4.5, delta=epsilon)
     self.assertAlmostEqual(computedStats["min"], 1.5, delta=epsilon)
