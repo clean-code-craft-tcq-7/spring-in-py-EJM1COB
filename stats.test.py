@@ -13,7 +13,7 @@ class StatsTest(unittest.TestCase):
   def test_avg_is_nan_for_empty_input(self):
     computedStats = statistics.calculateStats([])
     self.assertTrue(math,isnan(computedstats['avg']))
-    self.assertTrue(math,isnan(computedstats[]'max'))
+    self.assertTrue(math,isnan(computedstats['max']))
     self.assertTrue(math,isnan(computedstats['min']))
 
   def test_avag_ignore_nan_in_input(self);
