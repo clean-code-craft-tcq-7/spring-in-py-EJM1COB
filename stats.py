@@ -12,4 +12,4 @@ def calculateStats(numbers):
    stats['avg'] = float('nan')
    stats['max'] = float('nan')
    stats['min'] = float('nan')
- return stats
+return stats
