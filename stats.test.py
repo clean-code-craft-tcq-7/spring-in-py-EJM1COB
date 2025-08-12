@@ -25,13 +25,13 @@ class StatsTest(unittest.TestCase):
     self.assertAlmostEqual(computedStats["min"], 1.5, delta=epsilon)
 
   def test_avg_nan_for_all_nan_input(self):
-    computedStats = Statistics.CalculateStats([float('nan'),float('nan')])
+    computedStats = statistics.CalculateStats([float('nan'),float('nan')])
     self.assertTrue(math,isnan(computedstats['avg']))
     self.assertTrue(math,isnan(computedstats['max']))
     self.assertTrue(math,isnan(computedstats['min']))
 
   def test_avgw_nan_for_absurd_input(self):
-    computedStats = Statistics.CalculateStats([1e10,-1,9.2,4.5,1e5])
+    computedStats = statistics.CalculateStats([1e10,-1,9.2,4.5,1e5])
     self.assertTrue(math,isnan(computedstats['avg']))
     self.assertTrue(math,isnan(computedstats['max']))
     self.assertTrue(math,isnan(computedstats['min']))
